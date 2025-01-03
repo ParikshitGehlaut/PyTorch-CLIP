@@ -49,9 +49,9 @@ class VisionTransformer(nn.Module):
             n_heads,
             n_layers,
             mlp_ratio,
+            device,
             n_classes,
             dropout,
-            device
             ):
         
         super().__init__()
@@ -139,6 +139,7 @@ class CLIP(nn.Module):
                 n_heads,
                 n_layers,
                 mlp_ratio,
+                device=device,
                 n_classes=embed_dim,
                 dropout=dropout,
             )
