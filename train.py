@@ -78,7 +78,7 @@ def load_transform():
 tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
 
 # Load the dataset
-dataset = load_dataset("nlphuji/flickr30k")
+dataset = load_dataset("Multimodal-Fatima/COCO_captions_train", "default", split="train")
 
 # Apply transformations
 transform = load_transform()
