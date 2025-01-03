@@ -78,7 +78,7 @@ def load_transform():
 tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
 
 # Load the dataset
-dataset = load_dataset("nlphuji/flickr30k", "TEST", split="train")
+dataset = load_dataset("nlphuji/flickr30k")
 
 # Apply transformations
 transform = load_transform()
